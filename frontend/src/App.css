@@ -1,0 +1,84 @@
+.app {
+  min-height: 100vh;
+  margin: 0;
+  background-color: #1f1f1f;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.app__header {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.app__header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.app__content {
+  flex: 1;
+  padding: 0 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.status {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.status--error {
+  color: #ff6b6b;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 960px;
+}
+
+.product-card {
+  background-color: #2b2b2b;
+  border: 1px solid #4a4a4a;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+}
+
+.product-card h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.3rem;
+}
+
+.product-card p {
+  margin: 0 0 1.25rem;
+  font-size: 1.1rem;
+}
+
+.product-card button {
+  background-color: #1675ff;
+  border: none;
+  color: #ffffff;
+  padding: 0.6rem 1.4rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.product-card button:hover {
+  background-color: #0f5fd1;
+}
